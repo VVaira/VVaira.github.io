@@ -1,0 +1,65 @@
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100vw;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.container {
+    display: grid;
+    justify-items: stretch;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 5vw 5vw 5vw 5vw 5vw 5vw;
+    grid-template-rows: 5vw 5vw 5vw 5vw 5vw 5vw;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    column-gap: 0;
+    row-gap: 0;
+}
+
+.item {
+    background-color: black;
+    border: .3vw solid red;
+    width: calc(5vw);
+    height: calc(5vw);
+    transition-property: background-color;
+    transition-duration: .3s;
+    border-radius: 5%;
+    box-shadow: 1vh 1vh;
+}
+
+.item:hover {
+    background-color:maroon;
+}
+
+.item.kepes {
+    background-color: red;
+}
+
+.item.kepes:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+#szamlal {
+    
+}
+
+h1 {
+    margin-bottom: 2vh;
+}
